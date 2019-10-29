@@ -5,10 +5,9 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build-only": "webpack --mode production",
-    "build": "del-cli dist && webpack --mode production && html dist/*.html --indent-size 2",
+    "build": "del-cli dist && webpack --mode production",
     "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open",
-    "beautify": "html dist/*.html --indent-size 2",
     "clear": "del-cli dist"
   },
   "devDependencies": {
@@ -20,6 +19,7 @@
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
     "cssnano": "^4.1.10",
+    "del-cli": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.13.0",
