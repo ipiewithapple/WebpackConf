@@ -77,6 +77,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: __dirname + '/src/index.html',
       inject: 'body',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      },
     }),
     new MiniCssExtractPlugin({
       filename: "./css/style.css"
